@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="837.0" prefWidth="1287.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyController">
+	<children>
+      <TabPane fx:id="TabPaneID" layoutX="486.0" prefHeight="700.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="TabReignID" text="Reign">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="TableViewReign" prefHeight="650.0" prefWidth="800.0">
+                          <columns>
+                            <TableColumn fx:id="ReignColumn_reignID" prefWidth="60.0" style="-fx-alignment: CENTER;" text="reignID" />
+                            <TableColumn fx:id="ReignColumn_title" prefWidth="120.0" style="-fx-alignment: CENTER;" text="title" />
+                              <TableColumn fx:id="ReignColumn_ruler" prefWidth="50.0" style="-fx-alignment: CENTER;" text="ruler" />
+                              <TableColumn fx:id="ReignColumn_number" prefWidth="50.0" style="-fx-alignment: CENTER;" text="number" />
+                              <TableColumn fx:id="ReignColumn_start" prefWidth="50.0" style="-fx-alignment: CENTER;" text="start" />
+                              <TableColumn fx:id="ReignColumn_end" prefWidth="50.0" style="-fx-alignment: CENTER;" text="end" />
+                              <TableColumn fx:id="ReignColumn_area" style="-fx-alignment: CENTER;" text="area" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="TabRulerID" text="Ruler">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="TableViewRuler" prefHeight="650.0" prefWidth="800.0">
+                           <columns>
+                              <TableColumn fx:id="RulerColumn_rulerID" prefWidth="60.0" style="-fx-alignment: CENTER;" text="rulerID" />
+                              <TableColumn fx:id="RulerColumn_firstname" style="-fx-alignment: CENTER;" text="firstname" />
+                              <TableColumn fx:id="RulerColumn_secondname" style="-fx-alignment: CENTER;" text="secondname" />
+                              <TableColumn fx:id="RulerColumn_surname" prefWidth="100.0" style="-fx-alignment: CENTER;" text="surname" />
+                              <TableColumn fx:id="RulerColumn_epithet" style="-fx-alignment: CENTER;" text="epithet" />
+                              <TableColumn fx:id="RulerColumn_nickname" prefWidth="120.0" style="-fx-alignment: CENTER;" text="nickname" />
+                              <TableColumn fx:id="RulerColumn_gender" prefWidth="50.0" style="-fx-alignment: CENTER;" text="gender" />
+                              <TableColumn fx:id="RulerColumn_dynasty" prefWidth="180.0" style="-fx-alignment: CENTER;" text="dynasty" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="TabDynastyID" text="Dynasty">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="TableViewDynasty" prefHeight="650.0" prefWidth="800.0">
+                           <columns>
+                              <TableColumn fx:id="DynastyColumn_name" prefWidth="200.0" style="-fx-alignment: CENTER;" text="name" />
+                              <TableColumn fx:id="DynastyColumn_ethnicity" prefWidth="131.0" style="-fx-alignment: CENTER;" text="ethnicity" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="TabAgeID" text="Age">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="TableViewAge" prefHeight="650.0" prefWidth="800.0">
+                           <columns>
+                              <TableColumn fx:id="AgeColumn_age" prefWidth="200.0" style="-fx-alignment: CENTER;" text="age" />
+                              <TableColumn fx:id="AgeColumn_start" prefWidth="75.0" style="-fx-alignment: CENTER;" text="start" />
+                              <TableColumn fx:id="AgeColumn_end" prefWidth="75.0" style="-fx-alignment: CENTER;" text="end" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="TabWarID" text="War">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="TableViewWar" prefHeight="650.0" prefWidth="800.0">
+                           <columns>
+                              <TableColumn fx:id="WarColumn_war" prefWidth="200.0" style="-fx-alignment: CENTER;" text="war" />
+                              <TableColumn fx:id="WarColumn_start" prefWidth="75.0" style="-fx-alignment: CENTER;" text="start" />
+                              <TableColumn fx:id="WarColumn_end" prefWidth="75.0" style="-fx-alignment: CENTER;" text="end" />
+                              <TableColumn fx:id="WarColumn_result" prefWidth="104.0" style="-fx-alignment: CENTER;" text="result" />
+                              <TableColumn fx:id="WarColumn_mainenemy" prefWidth="178.0" style="-fx-alignment: CENTER;" text="main enemy" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="TabAgeReignID" text="Age-Reign">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="TableViewAgeReign" prefHeight="650.0" prefWidth="800.0">
+                           <columns>
+                              <TableColumn fx:id="AgeReignColumn_age" prefWidth="160.0" style="-fx-alignment: CENTER;" text="age" />
+                              <TableColumn fx:id="AgeReignColumn_reignID" prefWidth="171.0" style="-fx-alignment: CENTER;" text="reignID" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="TabAgeWarID" text="Age-War">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="TableViewAgeWar" prefHeight="650.0" prefWidth="800.0">
+                           <columns>
+                              <TableColumn fx:id="AgeWarColumn_age" prefWidth="200.0" style="-fx-alignment: CENTER;" text="age" />
+                              <TableColumn fx:id="AgeWarColumn_war" prefWidth="131.0" style="-fx-alignment: CENTER;" text="war" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="TabReignWarID" text="Reign-War">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="TableViewReignWar" prefHeight="650.0" prefWidth="800.0">
+                           <columns>
+                              <TableColumn fx:id="ReignWarColumn_reignID" prefWidth="155.0" style="-fx-alignment: CENTER;" text="reignID" />
+                              <TableColumn fx:id="ReignWarColumn_war" prefWidth="176.0" style="-fx-alignment: CENTER;" text="war" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="TabStatisticsID" text="Statistics">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="StatisticsView" prefHeight="650.0" prefWidth="800.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Pane fx:id="CommandPaneID" layoutY="623.0" prefHeight="58.0" prefWidth="487.0">
+         <children>
+            <Button fx:id="AddButtonID" layoutX="125.0" layoutY="6.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#addQuery" prefHeight="51.0" prefWidth="110.0" text="Add" />
+            <Button fx:id="DeleteButtonID" layoutX="363.0" layoutY="6.0" mnemonicParsing="false" onAction="#deleteQuery" prefHeight="51.0" prefWidth="110.0" text="Delete" />
+            <Button fx:id="UpdateButtonID" layoutX="244.0" layoutY="6.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#updateQuery" prefHeight="51.0" prefWidth="110.0" text="Update" />
+            <Button fx:id="SearchButtonID" layoutX="5.0" layoutY="6.0" mnemonicParsing="false" onAction="#searchQuery" prefHeight="51.0" prefWidth="110.0" text="Search" />
+         </children>
+      </Pane>
+      <TabPane fx:id="EditTabPaneID" layoutX="1.0" prefHeight="600.0" prefWidth="485.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="EditReignTabID" text="Reign">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="ReignReignIDTextField" layoutX="202.0" layoutY="27.0" prefHeight="51.0" prefWidth="184.0" />
+                        <TextField fx:id="ReignTitleTextField" layoutX="202.0" layoutY="78.0" prefHeight="51.0" prefWidth="184.0" />
+                        <ComboBox fx:id="ReignRulerComboBox" layoutX="202.0" layoutY="129.0" prefHeight="51.0" prefWidth="184.0" />
+                        <TextField fx:id="ReignNumberTextField" layoutX="202.0" layoutY="180.0" prefHeight="51.0" prefWidth="184.0" />
+                        <TextField fx:id="ReignStartTextField" layoutX="202.0" layoutY="231.0" prefHeight="51.0" prefWidth="184.0" />
+                        <TextField fx:id="ReignEndTextField" layoutX="202.0" layoutY="282.0" prefHeight="51.0" prefWidth="184.0" />
+                        <TextField fx:id="ReignAreaTextField" layoutX="202.0" layoutY="333.0" prefHeight="51.0" prefWidth="184.0" />
+                        <Label layoutX="21.0" layoutY="27.0" prefHeight="51.0" prefWidth="143.0" text="reignID *" />
+                        <Label layoutX="21.0" layoutY="78.0" prefHeight="51.0" prefWidth="143.0" text="title *" />
+                        <Label layoutX="21.0" layoutY="129.0" prefHeight="51.0" prefWidth="143.0" text="ruler *" />
+                        <Label layoutX="21.0" layoutY="180.0" prefHeight="51.0" prefWidth="143.0" text="number" />
+                        <Label layoutX="21.0" layoutY="231.0" prefHeight="51.0" prefWidth="143.0" text="start *" />
+                        <Label layoutX="21.0" layoutY="282.0" prefHeight="51.0" prefWidth="143.0" text="end" />
+                        <Label layoutX="21.0" layoutY="333.0" prefHeight="51.0" prefWidth="143.0" text="area *" />
+                        <Label layoutX="17.0" layoutY="484.0" prefHeight="58.0" prefWidth="468.0" text="* Mandatory for &quot;Add&quot;" />                    
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="EditRulerTabID" text="Ruler">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="RulerRulerIDTextField" layoutX="202.0" layoutY="27.0" prefHeight="51.0" prefWidth="184.0" />
+                        <TextField fx:id="RulerFirstnameTextField" layoutX="202.0" layoutY="78.0" prefHeight="51.0" prefWidth="184.0" />
+                        <TextField fx:id="RulerSecondnameTextField" layoutX="202.0" layoutY="129.0" prefHeight="51.0" prefWidth="184.0" />
+                        <TextField fx:id="RulerSurnameTextField" layoutX="202.0" layoutY="180.0" prefHeight="51.0" prefWidth="184.0" />
+                        <TextField fx:id="RulerEpithetTextField" layoutX="202.0" layoutY="231.0" prefHeight="51.0" prefWidth="184.0" />
+                        <TextField fx:id="RulerNicknameTextField" layoutX="202.0" layoutY="282.0" prefHeight="51.0" prefWidth="184.0" />
+                        <ComboBox fx:id="RulerGenderComboBox" layoutX="202.0" layoutY="333.0" prefHeight="51.0" prefWidth="184.0" />
+                        <ComboBox fx:id="RulerDynastyComboBox" layoutX="202.0" layoutY="384.0" prefHeight="51.0" prefWidth="184.0" />
+                        <Label layoutX="21.0" layoutY="27.0" prefHeight="51.0" prefWidth="143.0" text="rulerID *" />
+                        <Label layoutX="21.0" layoutY="78.0" prefHeight="51.0" prefWidth="143.0" text="firstname *" />
+                        <Label layoutX="21.0" layoutY="129.0" prefHeight="51.0" prefWidth="143.0" text="secondname" />
+                        <Label layoutX="21.0" layoutY="180.0" prefHeight="51.0" prefWidth="143.0" text="surname" />
+                        <Label layoutX="21.0" layoutY="231.0" prefHeight="51.0" prefWidth="143.0" text="epithet" />
+                        <Label layoutX="21.0" layoutY="282.0" prefHeight="51.0" prefWidth="143.0" text="nickname" />
+                        <Label layoutX="21.0" layoutY="333.0" prefHeight="51.0" prefWidth="143.0" text="gender *" />
+                        <Label layoutX="21.0" layoutY="384.0" prefHeight="51.0" prefWidth="143.0" text="dynasty *" />
+                        <Label layoutX="17.0" layoutY="484.0" prefHeight="58.0" prefWidth="468.0" text="* Mandatory for &quot;Add&quot;" />                   
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="EditDynastyTabID" text="Dynasty">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="DynastyNameTextField" layoutX="202.0" layoutY="27.0" prefHeight="51.0" prefWidth="184.0" />
+                        <TextField fx:id="DynastyEthnicityTextField" layoutX="202.0" layoutY="78.0" prefHeight="51.0" prefWidth="184.0" />
+                        <Label layoutX="21.0" layoutY="27.0" prefHeight="51.0" prefWidth="143.0" text="name *" />
+                        <Label layoutX="21.0" layoutY="78.0" prefHeight="51.0" prefWidth="143.0" text="ethnicity *" />
+                        <Label layoutX="17.0" layoutY="484.0" prefHeight="58.0" prefWidth="468.0" text="* Mandatory for &quot;Add&quot;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="EditAgeTabID" text="Age">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="AgeAgeTextField" layoutX="202.0" layoutY="27.0" prefHeight="51.0" prefWidth="184.0" />
+                        <TextField fx:id="AgeStartTextField" layoutX="202.0" layoutY="78.0" prefHeight="51.0" prefWidth="184.0" />
+                        <Label layoutX="21.0" layoutY="27.0" prefHeight="51.0" prefWidth="143.0" text="age *" />
+                        <Label layoutX="21.0" layoutY="78.0" prefHeight="51.0" prefWidth="143.0" text="start *" />
+                        <Label layoutX="21.0" layoutY="129.0" prefHeight="51.0" prefWidth="143.0" text="end" />
+                        <TextField fx:id="AgeEndTextField" layoutX="202.0" layoutY="129.0" prefHeight="51.0" prefWidth="184.0" />
+                        <Label layoutX="17.0" layoutY="484.0" prefHeight="58.0" prefWidth="468.0" text="* Mandatory for &quot;Add&quot;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="EditWarTabID" text="War">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="WarWarTextField" layoutX="202.0" layoutY="27.0" prefHeight="51.0" prefWidth="184.0" />
+                        <TextField fx:id="WarStartTextField" layoutX="202.0" layoutY="78.0" prefHeight="51.0" prefWidth="184.0" />
+                        <Label layoutX="21.0" layoutY="27.0" prefHeight="51.0" prefWidth="143.0" text="war *" />
+                        <Label layoutX="21.0" layoutY="78.0" prefHeight="51.0" prefWidth="143.0" text="start *" />
+                        <Label layoutX="21.0" layoutY="129.0" prefHeight="51.0" prefWidth="143.0" text="end **" />
+                        <TextField fx:id="WarEndTextField" layoutX="202.0" layoutY="129.0" prefHeight="51.0" prefWidth="184.0" />
+                        <Label layoutX="21.0" layoutY="180.0" prefHeight="51.0" prefWidth="143.0" text="result **" />
+                        <Label layoutX="21.0" layoutY="231.0" prefHeight="51.0" prefWidth="167.0" text="main enemy **" />
+                        <ComboBox fx:id="WarResultComboBox" layoutX="202.0" layoutY="180.0" prefHeight="51.0" prefWidth="184.0" />
+                        <TextField fx:id="WarMainenemyTextField" layoutX="202.0" layoutY="231.0" prefHeight="51.0" prefWidth="184.0" />
+                        <Label layoutX="17.0" layoutY="484.0" prefHeight="58.0" prefWidth="468.0" text="* Mandatory for &quot;Add&quot;" />
+                        <Label layoutX="18.0" layoutY="435.0" prefHeight="58.0" prefWidth="468.0" text="** &quot;Add&quot; &amp; &quot;Update&quot; only in combination" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="EditAgeReignTabID" text="Age-Reign">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="21.0" layoutY="27.0" prefHeight="51.0" prefWidth="143.0" text="age *" />
+                        <Label layoutX="21.0" layoutY="78.0" prefHeight="51.0" prefWidth="143.0" text="reignID *" />
+                        <ComboBox fx:id="AgeReignReignIDComboBox" layoutX="202.0" layoutY="78.0" prefHeight="51.0" prefWidth="184.0" />
+                        <ComboBox fx:id="AgeReignAgeComboBox" layoutX="202.0" layoutY="27.0" prefHeight="51.0" prefWidth="184.0" />
+                        <Label layoutX="17.0" layoutY="484.0" prefHeight="58.0" prefWidth="468.0" text="* Mandatory for &quot;Add&quot;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="EditAgeWarTabID" text="Age-War">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="21.0" layoutY="27.0" prefHeight="51.0" prefWidth="143.0" text="age *" />
+                        <Label layoutX="21.0" layoutY="78.0" prefHeight="51.0" prefWidth="143.0" text="war *" />
+                        <ComboBox fx:id="AgeWarWarComboBox" layoutX="202.0" layoutY="78.0" prefHeight="51.0" prefWidth="184.0" />
+                        <ComboBox fx:id="AgeWarAgeComboBox" layoutX="202.0" layoutY="27.0" prefHeight="51.0" prefWidth="184.0" />
+                        <Label layoutX="17.0" layoutY="484.0" prefHeight="58.0" prefWidth="468.0" text="* Mandatory for &quot;Add&quot;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="EditReignWarTabID" text="Reign-War">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="21.0" layoutY="27.0" prefHeight="51.0" prefWidth="143.0" text="reignID *" />
+                        <Label layoutX="21.0" layoutY="78.0" prefHeight="51.0" prefWidth="143.0" text="war *" />
+                        <ComboBox fx:id="ReignWarReignIDComboBox" layoutX="202.0" layoutY="27.0" prefHeight="51.0" prefWidth="184.0" />
+                        <ComboBox fx:id="ReignWarWarComboBox" layoutX="202.0" layoutY="78.0" prefHeight="51.0" prefWidth="184.0" />
+                        <Label layoutX="17.0" layoutY="484.0" prefHeight="58.0" prefWidth="468.0" text="* Mandatory for &quot;Add&quot;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="EditStatisticsTabID" text="Statistics">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="RulerCustom1" layoutX="26.0" layoutY="28.0" mnemonicParsing="false" onAction="#createRulerCustom1" prefHeight="58.0" prefWidth="433.0" text="Ruler - Length of reign over Sweden" />
+                        <Button fx:id="RulerCustom2" layoutX="26.0" layoutY="102.0" mnemonicParsing="false" onAction="#createRulerCustom2" prefHeight="58.0" prefWidth="433.0" text="Ruler - Number of wars Sweden won in the end" />
+                        <Button fx:id="DynastyCustom1" layoutX="26.0" layoutY="176.0" mnemonicParsing="false" onAction="#createDynastyCustom1" prefHeight="58.0" prefWidth="433.0" text="Dynasty - Number of wars during reign" />
+                        <Button fx:id="AgeCustom1" layoutX="26.0" layoutY="249.0" mnemonicParsing="false" onAction="#createAgeCustom1" prefHeight="58.0" prefWidth="433.0" text="Age - Number of different rulers" />
+                        <Button fx:id="WarCustom1" layoutX="26.0" layoutY="325.0" mnemonicParsing="false" onAction="#createWarCustom1" prefHeight="58.0" prefWidth="433.0" text="War - Number of main enemies and results" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label fx:id="AlertID" layoutX="1.0" layoutY="691.0" prefHeight="58.0" prefWidth="554.0" />
+      <Label fx:id="InfoAddID" layoutX="1.0" layoutY="742.0" prefHeight="58.0" prefWidth="554.0" />
+      <Label fx:id="InfoDeleteID" layoutX="1.0" layoutY="794.0" prefHeight="58.0" prefWidth="554.0" />
+	</children>
+</AnchorPane>
